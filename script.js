@@ -7,6 +7,7 @@ data.forEach((country) => {
   
  const countryCard = document.createElement('a')
 countryCard.classList.add('country-card')
+countryCard.href=`/country.html?name=${country.name.common}`
 
 const cardHtml = `
 <img src="${country.flags.svg}" alt="flag">
@@ -14,7 +15,7 @@ const cardHtml = `
     <h3 class="card-title">${country.name.common}</h3>
     <p><b>Population: </b> ${country.population.toLocaleString('en-IN')}</p>
     <p><b>Region: </b>${country.region}</p>
-    <p><b>Capital: </b>${country.capital[0]}</p>
+    <p><b>Capital: </b>${country.capital?.[0]}</p>
  `
 countryCard.innerHTML = cardHtml
 

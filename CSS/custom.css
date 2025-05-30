@@ -6,7 +6,6 @@ body{
     margin: 0;
     font-family:Nunito,sans-serif;
 }
-
 .title{
     font-weight: 800;
 }
@@ -43,9 +42,10 @@ margin-inline: auto;
 .country-card{
   display: inline-block;
     width: 250px;
+   height: 351px;
     border-radius: 8px;
     overflow:hidden ;
-    box-shadow: 0 2px 16px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
     padding-bottom: 18px;
      transition: transform 0.2s ease-in-out;
     
@@ -65,5 +65,20 @@ margin-inline: auto;
 }
 .country-card img{
     width: 100%;
+
 }
 
+@media (max-width:768px) {
+    .countries-container{
+        justify-content: center;
+    }
+    .country-details{
+        justify-content: center;
+    }
+    .title{
+        font-size: 16px;
+    }
+    .header-content p{
+        font-size: 12px;
+    }
+}
