@@ -30,20 +30,26 @@ a{
 main{
     margin-top: 40px;
 }
+.country-details-container{
+    max-width: 1200px;
+    margin-inline: auto;
+}
 .backbtn{
       box-shadow: 0 0px 4px 0px rgba(0, 0, 0, 0.2);
     padding: 6px 24px;
     border-radius:5px;
+    cursor: pointer;
 }
 
 .country-details{
     display: flex;
      align-items: center;
-   margin-top: 64px;
+   margin-top: 32px;
     gap: 64px;
 }
 .country-details img{
     width: 40%;
+    border: 1px solid black;
 }
 .details-txt{
     display: flex;
@@ -59,12 +65,15 @@ main{
 }
 .border-countries{
    margin-top: 48px; 
+   display: flex;
+   align-items:flex-start;
+   flex-wrap: wrap;
+   gap: 8px;
 }
 .border-countries a{
  box-shadow: 0 0px 4px 0px rgba(0, 0, 0, 0.2);
   padding: 6px 24px;
     border-radius:5px;
-    margin-inline:4px ;
     font-size: 16px;
     padding: 4px 10px;
 }

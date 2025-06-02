@@ -19,38 +19,38 @@
 <body>
     <header class="header-container">
         <div class="header-content">
-            <h2 class="title">Where in the World?</h2>
+            <h2 class="title"><a href="/">Where in the World?</a></h2>
             <p><i class="fa-regular fa-moon color"></i>&nbsp;&nbsp; Dark Mode</p>
         </div>
     </header>
     <main>
-        <div class="country-details-coutainer">
-        <a class="backbtn"><i class="fa-solid fa-arrow-left"></i> &nbsp;back</a>
-        <!-- info about country -->
-        <div class="country-details">
+        <div class="country-details-container">
+            <span class="backbtn" onclick="history.back()"><i class="fa-solid fa-arrow-left"></i> &nbsp;back</span>
+            <!-- info about country -->
+            <div class="country-details">
 
-            <!-- <img src="https://flagcdn.com/be.svg" alt="flag">
+                <img src="https://flagcdn.com/be.svg" alt="flag">
 
-            <div class="details-txt-container">
-                <h1>Iceland</h1>
-                <div class="details-txt">
-                    <p><b>Native Name: </b> Belgie</p>
-                    <p><b>Population: </b> 5352000</p>
-                    <p><b>Region: </b>Africa</p>
-                    <p><b>sub Region:</b> WEstern Europe</p>
-                    <p><b>Capital: </b>Asmara</p>
-                    <p><b>Top Level Domain: </b>be</p>
-                    <p><b>Currencies:</b>Euro</p>
-                    <p><b>language: </b>Dutch,French</p>
-                </div> -->
-                   <!-- <div class="border-countries">
-                <p><b>Border Countries: </b>&nbsp; <a href="#"> French</a><a href="#"> Russia</a></p>
-            </div> -->
+                <div class="details-txt-container">
+                    <h1>Iceland</h1>
+                    <div class="details-txt">
+                        <p><b>Native Name: </b><span class="native-name"></span> </p>
+                        <p><b>Population: </b> <span class="population"></span></p>
+                        <p><b>Region: </b><span class="region"></span></p>
+                        <p><b>sub Region:</b> <span class="sub-region"></span></p>
+                        <p><b>Capital: </b><span class="capital"></span></p>
+                        <p><b>Top Level Domain: </b><span class="top-level-domain"></span></p>
+                        <p><b>Currencies:</b><span class="currencies"></span></p>
+                        <p><b>language: </b><span class="languages"></span></p>
+                    </div>
+                    <div class="border-countries">
+                        <b>Border Countries: </b>&nbsp;
+                    </div>
+                </div>
             </div>
         </div>
-        </div>
     </main>
-    <script src="country.js"></script>
+    <script src="country1.js"></script>
 </body>
 
 </html>
