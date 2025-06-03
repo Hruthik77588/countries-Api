@@ -10,7 +10,8 @@ const topLevelDomain = document.querySelector(".top-level-domain")
 const Currencies = document.querySelector(".currencies")
 const Language = document.querySelector(".languages")
 const borderCountries = document.querySelector(".border-countries")
-
+const themeSwitch=document.querySelector(".theme-switch")
+const headerContent=document.querySelector(".header-content")
 
 fetch(`https://restcountries.com/v3.1/name/${countryNames}?fullText=true`)
     .then((res) => res.json())
@@ -63,3 +64,13 @@ fetch(`https://restcountries.com/v3.1/name/${countryNames}?fullText=true`)
         }
 
     })
+
+    themeSwitch.addEventListener("click",()=>{
+    document.body.classList.toggle("dark")
+
+      if (document.body.classList.contains("dark")) {
+    // headerContent.append(themeSwitch)
+  } else {
+   document.body.classList.add("dark")
+  }
+})

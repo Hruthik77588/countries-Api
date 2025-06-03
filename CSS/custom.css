@@ -47,7 +47,7 @@ a {
     justify-content: space-between;
     margin-inline: auto;
 }
-.header-content p{
+.theme-switch{
     cursor: pointer;
 }
 .search-filter-container{

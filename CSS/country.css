@@ -5,6 +5,23 @@
 body{
     margin: 0;
     font-family:Nunito,sans-serif;
+       --background-color:white;
+    --text-color:black;
+    --elements-color:white;
+        background-color: var(--background-color);
+    color:var(--text-color);
+}
+
+body.dark{
+      --background-color:hsl(207, 26%, 17%);
+    --text-color:white;
+    --elements-color: hsl(209, 23%, 22%);
+}
+body.light{
+        --background-color:white;
+    --text-color:black;
+    --elements-color:white;
+    
 }
 .title{
     font-weight: 800;
@@ -19,6 +36,8 @@ a{
 .header-container{
  box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.2);
      padding-inline: 24px;
+      background-color: var(--elements-color);
+      color:var(--text-color) ;
 }
 .header-content{
     max-width: 1200px;
@@ -27,8 +46,12 @@ a{
     justify-content: space-between;
     margin-inline: auto;  
 }
+.theme-switch{
+    cursor: pointer;
+}
 main{
     margin-top: 40px;
+    background-color: var(--background-color);
 }
 .country-details-container{
     max-width: 1200px;

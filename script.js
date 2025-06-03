@@ -48,6 +48,11 @@ function renderCountries(data){
         })
 themeSwitch.addEventListener("click",()=>{
     document.body.classList.toggle("dark")
+          if (document.body.classList.contains("dark")) {
+    headerContent.append(themeSwitch)
+  } else {
+
+  }
 })
 
 
