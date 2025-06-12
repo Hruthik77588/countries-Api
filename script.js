@@ -4,7 +4,7 @@ const seacrhInput=document.querySelector(".search-container input")
 const themeSwitch=document.querySelector(".theme-switch")
 
 let allCountriesData
-fetch('https://restcountries.com/v3.1/all')
+fetch('https://reallstcountries.com/v3.1/all')
     .then((res) => res.json())
     .then((data)=>{
     renderCountries(data)
@@ -46,12 +46,14 @@ function renderCountries(data){
             console.log(filteredCountries)
             renderCountries(filteredCountries)
         })
+
+
 themeSwitch.addEventListener("click",()=>{
     document.body.classList.toggle("dark")
           if (document.body.classList.contains("dark")) {
-    headerContent.append(themeSwitch)
+    themeSwitch.innerHTML=`<i class="fa-solid fa-sun"></i>&nbsp;&nbsp; light Mode`
   } else {
-
+ themeSwitch.innerHTML=`<i class="fa-regular fa-moon color"></i>&nbsp;&nbsp; Dark Mode`
   }
 })
 

@@ -69,8 +69,8 @@ fetch(`https://restcountries.com/v3.1/name/${countryNames}?fullText=true`)
     document.body.classList.toggle("dark")
 
       if (document.body.classList.contains("dark")) {
-    // headerContent.append(themeSwitch)
+  themeSwitch.innerHTML=`<i class="fa-solid fa-sun color"></i>&nbsp;&nbsp; Light Mode`
   } else {
-   document.body.classList.add("dark")
+ themeSwitch.innerHTML=`<i class="fa-regular fa-moon color"></i>&nbsp;&nbsp; Dark Mode`
   }
 })
